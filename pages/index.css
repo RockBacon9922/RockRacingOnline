@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.example {
+    @apply first-letter:text-red-500
+}
+
+.textbox {
+    @apply border-black border-2
+}
