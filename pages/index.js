@@ -1,22 +1,9 @@
-import axios from "axios";
-
-function Form() {
-	const registerUser = (event) => {
-		event.preventDefault(); // don't redirect the page
-		// where we'll add our form logic
-		console.log("hello");
-		axios
-			.post("http://localhost:3000/api/new", "hello")
-			.then(console.log("true"), console.log("false"));
-	};
-
+const index = () => {
 	return (
-		<form onSubmit={registerUser}>
-			<label htmlFor="name">Name</label>
-			<input id="name" type="text" autoComplete="name" required />
-			<button type="submit">Register</button>
-		</form>
+		<div id="main">
+			<div id="game">{/* create a connect 4 game  */}</div>
+		</div>
 	);
-}
+};
 
-export default Form;
+export default index;
